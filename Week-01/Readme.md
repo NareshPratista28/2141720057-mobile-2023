@@ -3,5 +3,6 @@
 ### NIM     : 2141720057
 
 ### Output Tugas
-![Output!](/week-01/docs/screenshot-02.png)
-![Output!](/week-01/docs/screenshot-01.png)
+
+>><img src = /week-01/docs/screenshot-02.png>
+>><img src = /week-01/docs/screenshot-01.png>
