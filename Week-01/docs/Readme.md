@@ -4,5 +4,5 @@
 
 ### Output Tugas
 
->><img src = /week-01/docs/screenshot-02.png>
->><img src = /week-01/docs/screenshot-01.png>
+![Screenshot](/Week-01/docs/screenshot-02.png)
+![Screenshot](/Week-01/docs/screenshot-01.png)
