@@ -1,7 +1,8 @@
-## Nama    : Naresh Pratista
-## Kelas   : 3H 
-## NIM     : 2141720057
+### Nama    : Naresh Pratista
+### Kelas   : 3H 
+### NIM     : 2141720057
 
-### Repository ini dibuat untuk pengumpulan tugas Praktikum Pemrograman Mobile 2023
+### Output Tugas
 
-#### برك الله فيك
+![Screenshot](/Week-01/docs/screenshot-02.PNG)
+![Screenshot](/Week-01/docs/screenshot-01.PNG)
