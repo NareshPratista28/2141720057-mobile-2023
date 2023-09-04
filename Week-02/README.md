@@ -3,9 +3,9 @@
 
 ## Soal 1
 - Modifikasilah kode pada baris 3 di VS Code atau Editor Code favorit Anda berikut ini agar mendapatkan keluaran (output) sesuai yang diminta! 
-![Screenshot](/Week-02/docs/soal1_a.png) <br>
+> ![Screenshot](/Week-02/docs/soal1_a.png) <br>
 - Output yang diminta 
-![Screenshot](/Week-02/docs/soal1_b.png) <br>
+> ![Screenshot](/Week-02/docs/soal1_b.png) <br>
 
 
 #### Percobaan
