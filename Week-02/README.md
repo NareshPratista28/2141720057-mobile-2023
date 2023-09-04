@@ -23,10 +23,10 @@ Mengapa sangat penting untuk memahami bahasa pemrograman Dart sebelum kita mengg
 ## Soal 3
 
 Rangkumlah materi dari codelab ini menjadi poin-poin penting yang dapat Anda gunakan untuk membantu proses pengembangan aplikasi mobile menggunakan framework Flutter.
->📌 Bahasa Dart adalah inti dari Framework Flutter
->📌 Memahami Dart adalah dasar untuk bekerja dengan Flutter
->📌 Pengembang perlu mengetahui asal-usul bahasa Dart
->📌 Tujuan dibuatnya Dart adalah menggabungkan kelebihan-kelebihan bahasa tingkat tinggi dengan fitur-fitur modern, seperti:
+>- Bahasa Dart adalah inti dari Framework Flutter
+>- Memahami Dart adalah dasar untuk bekerja dengan Flutter
+>- Pengembang perlu mengetahui asal-usul bahasa Dart
+>- Tujuan dibuatnya Dart adalah menggabungkan kelebihan-kelebihan bahasa tingkat tinggi dengan fitur-fitur modern, seperti:
 >   1. Productive Tooling   : Untuk menganalisis kode, plugin, IDE, dan ekosistem
 >   2. Garbage Collection   : Untuk mengelola dealokasi memori
 >   3. Type Annotations (optional)     : Untuk keamanan dan konsistensi dalam mengontrol data dalam aplikasi
