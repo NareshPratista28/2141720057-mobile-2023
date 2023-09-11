@@ -1,16 +1,10 @@
 void main() {
-  // String test = "test2";
-  // if (test == "test1") {
-  //   print("Test1");
-  // } else if (test == "test2") {
-  //   print("Test2");
-  // } else {
-  //   print("Something else");
-  // }
-  // if (test == "test2") print("Test2 again");
-
-  String test = "true";
-  if (test == "true") {
-    print("Kebenaran");
+    for (int index = 10; index <= 27; index++) {
+      if (index == 21) {
+        break;
+      } else if (index > 1 && index < 7) {
+        continue;
+      }
+      print(index);
+    }
   }
-}
