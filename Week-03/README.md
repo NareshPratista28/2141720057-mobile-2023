@@ -1,5 +1,7 @@
 # Laporan Praktikum Minggu ke-3 | Pemrograman Mobile 2023 
 
+بِسْمِ ٱللَّٰهِ
+
 **Tujuan Praktikum**
 Setelah melakukan praktikum ini, mahasiswa mampu:
 - Menerapkan control flows pada bahasa pemrograman Dart
@@ -129,4 +131,39 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan 
 ### Tugas Praktikum 
 1. Silakan selesaikan Praktikum 1 sampai 3, lalu dokumentasikan berupa screenshot hasil pekerjaan beserta penjelasannya!
 2. Buatlah sebuah program yang dapat menampilkan bilangan prima dari angka 0 sampai 201 menggunakan Dart. Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda.
+ ```dart
+void main() {
+  String nama = "Naresh Pratista";
+  String nim = "2141720057";
+
+  bool namaTampil = false;
+  String bilanganPrima = "";
+
+  // Loop dari 0 - 201
+  for (int angka = 0; angka <= 201; angka++) {
+    if (angka == 0 || angka == 1) {
+      continue;
+    }
+    bool prima = true;
+    for (int i = 2; i <= angka / 2; i++) {
+      if (angka % i == 0) {
+        prima = false;
+        break;
+      }
+    }
+    if (prima) {
+      if (!namaTampil) {
+        print("Nama: $nama");
+        print("NIM: $nim");
+        namaTampil = true;
+      }
+      bilanganPrima += "$angka, ";
+    }
+  }
+  bilanganPrima = bilanganPrima.substring(0, bilanganPrima.length - 2);
+  print("$bilanganPrima");
+}
+```
+> ![Screenshot](/Week-03/docs/ss_tugas_2.PNG)
+> ![Screenshot](/Week-03/docs/ss_tugas_1.PNG)
 3. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
