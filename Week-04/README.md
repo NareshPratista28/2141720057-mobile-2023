@@ -263,3 +263,138 @@ Gantilah salah satu isi record dengan nama dan NIM Anda.
 
 ![Screenshot](/Week-04/docs/ss_p5_langkah5.PNG)
 ![Screenshot](/Week-04/docs/ss_p5_langkah5_1.PNG)
+
+## Tugas Praktikum
+1. Silahkan selesaikan Praktikum 1 sampai 5, lalu dokumentasikan berupa screenshot hasil pekerjaan Anda beserta penjelasannya!
+2. Jelaskan yang dimaksud Functions dalam bahasa Dart!
+      > - Function adalah blok bangunan dari kode yang dapat dibaca, dipelihara, dan dapat digunakan kembali. 
+      > - Function mengatur program ke dalam blok kode logis, kemudian dapat dipanggil untuk mengakses kode
+      > - Function juga memudahkan kita untuk membaca dan memelihara kode program
+
+3. Jelaskan jenis-jenis parameter di Functions beserta contoh sintaknya!
+    - Parameter opsional dapat digunakan ketika argument tidak perlu diteruskan secara wajib untuk eksekusi fungsi.
+    - Parameter dapat ditandai opsional dengan menambahkan tanda tanya kedalam perintahnya
+
+      > 1. Positional Parameters
+      >     - Dapat menspesifikasikan posisi opsional dari parameter.
+      >     - Anda memerlukan tanda kurung siku '[]'
+      ```dart
+      void tampilkanInfo(String nama, int usia) {
+        print('Nama: $nama, Usia: $usia tahun');
+      }
+
+      tampilkanInfo('Alice', 25); // Memanggil fungsi dengan parameter-posisi
+      ```
+      > 2. Named Parameters
+      >     - Nama parameter harus spesifik ketika nilainya sedang berlalu.
+      >     - Dapat menggunakan tanda kurung kurawal '{}' untuk melakukan spesifikasi pada optional named parameter 
+      ```dart
+      void tampilkanInfo({String nama, int usia}) {
+        print('Nama: $nama, Usia: $usia tahun');
+      }
+
+      tampilkanInfo(nama: 'Bob', usia: 30);
+      ```
+      > 3. Default Parameters
+      >     - Kita bisa memberikan nilai default ke parameter, yang akan digunakan jika nilai untuk parameter tersebut tidak diberikan saat pemanggilan fungsi.
+      >     - Parameter tersebut juga dapat secara eksplisit melewati nilai.
+      ```dart
+      void test({String nama = 'Bro'}) {
+        print('Halo, $nama!');
+      }
+
+      test(); // Output: "Halo, Bro!"
+      test(nama: 'Naresh'); // Output: "Halo, Naresh!"
+      ```
+      > 4. Required Parameters
+      >     - Parameter ini harus selalu disediakan saat memanggil suatu fungsi
+      >     - Untuk mendeklarasikannya bisa dengan menggunakan 'required' sebelum tipe data parameter
+      ```dart
+      void show({required String nama, required int usia}) {
+        print('Nama: $nama, Usia: $usia tahun');
+      }
+
+      show(nama: 'Naresh', usia: 20); 
+      ```
+
+4. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+    > - Dalam dart, functions memeliki sifat yang sama dengan objek-objek yang lain.
+    > - Jadi, kita bisa melakukan berbagai operasi pada fungsi seperti:
+    >   1. Menyimpan fungsi dalam variabel
+    ```dart
+    int tambah(int a, int b) {
+    return a + b;
+    }
+    int Function(int, int) operasi = tambah; // Menyimpan fungsi dalam variabel
+    print(operasi(3, 4)); // Output: 7
+    ```
+    >   2. Mengirim fungsi sebagai argumen ke fungsi lain.
+    ```dart
+    int hitung(int Function(int, int) fungsi, int a, int b) {
+    return fungsi(a, b);
+    }
+    int hasil = hitung(tambah, 5, 2); // Mengirim fungsi tambah sebagai argumen
+    print(hasil); // Output: 7
+    ```
+
+5. Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
+    > - Anonymous Functions atau biasa disebut lambda functions atau closures
+    > - Fungsi ini dapat berguna ketika kita ingin melakukan tugas tertentu atau sebagai argumen untuk fungsi lain, tanpa harus mendefinisikan nama fungsi secara eksplisit
+    ```dart
+    void forEachItem(List<int> list, Function(int) action) {
+      for (var item in list) {
+        action(item);
+      }
+    }
+
+    List<int> angka = [1, 2, 3, 4, 5];
+    forEachItem(angka, (item) {
+      print(item); // Output: 1, 2, 3, 4, 5
+    });
+
+    ```
+6. Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+    > Perbedaannya adalah kalau lexical scope itu berkaitan dengan cakupan dari variabel dalam kode, sedangkan lexical closures berkaitan dengan kemampuan fungsi untuk mengakses cakupan leksikal dimana mereka dibuat.
+    ```dart
+    # contoh Lexical Scope
+
+    void outer() {
+      var x = 10;
+      void inner() {
+        print(x); // Variabel x hanya dapat diakses di dalam inner karena inner berada dalam cakupan leksikal outer.
+      }
+      inner();
+    }
+    outer();
+    ```
+    ```dart
+    # contoh Lexical Closure
+
+    Function outer() {
+      var x = 10;
+      Function inner = () {
+        print(x); // Variabel x diakses oleh inner bahkan setelah outer selesai dieksekusi.
+      };
+      return inner; // Mengembalikan fungsi inner sebagai closure.
+    }
+
+    var closureFunction = outer();
+    closureFunction(); // Output: 10
+    ```
+
+7. Jelaskan dengan contoh cara membuat return multiple value di Functions!
+    > - Disini saya memberikan contoh dengan menggunakan List
+    ```dart
+    List<dynamic> getInfo() {
+      return ['Naresh', 20, 'Pilot'];
+    }
+
+    void main() {
+      var info = getInfo();
+      print(info[0]); // Output: Naresh
+      print(info[1]); // Output: 20
+      print(info[2]); // Output: Pilot
+    }
+
+    ```
+8. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
