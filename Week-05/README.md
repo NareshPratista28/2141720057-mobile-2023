@@ -46,13 +46,13 @@ Pada praktikum ini saya langsung skip ke Langkah 11 dikarenakan saya sudah letak
 
 Kembali ke VS Code, ubah platform di pojok kanan bawah ke emulator atau device atau bisa juga menggunakan browser Chrome. Lalu coba running project hello_world dengan tekan F5 atau Run > Start Debugging
 
-![Screenshot](/Week-05/docs/screenshot/ss_p2_langkah11.png)
+![Screenshot](/Week-05/docs/screenshot/ss_p2_langkah11_mobile.png)
 
 ### Langkah 12:
 
 Silakan screenshot seperti pada Langkah 11, namun teks yang ditampilkan dalam aplikasi berupa nama lengkap Anda.
 
-![Screenshot](/Week-05/docs/screenshot/ss_p2_langkah12.png)
+![Screenshot](/Week-05/docs/screenshot/ss_p2_langkah12_mobile.png)
 
 ## Praktikum 3: Menerapkan Widget Dasar
 
@@ -78,7 +78,7 @@ Widget build(BuildContext context) {
 
 Lakukan import file text_widget.dart ke main.dart, lalu ganti bagian text widget dengan kode di atas.
 
-![Screenshot](/Week-05/docs/screenshot/ss_p3_langkah1.png)
+![Screenshot](/Week-05/docs/screenshot/ss_p3_langkah1_mobile.png)
 
 ### Langkah 2: Image Widget
 
@@ -107,7 +107,7 @@ flutter:
     - assets/logo_polinema.jpg
 ```
 
-![Screenshot](/Week-05/docs/screenshot/ss_p3_langkah2.png)
+![Screenshot](/Week-05/docs/screenshot/ss_p3_langkah2_mobile.png)
 
 ## Praktikum 4: Menerapkan Widget Material Design dan iOS Cupertino
 

@@ -1,30 +1,37 @@
 import 'package:flutter/material.dart';
 import 'basic_widgets/image_widget.dart';
+import 'basic_widgets/text_widget.dart';
 import 'basic_widgets/date_time_pickers.dart';
 import 'basic_widgets/dialog_widget.dart';
 import 'basic_widgets/input_selection_widget.dart';
 import 'basic_widgets/scaffold_widget.dart';
 
+// void main(){
+//   runApp(const TugasPraktikum());
+// }
+
+// class TugasPraktikum extends StatelessWidget{
+//   const TugasPraktikum({super.key});
+
+//   @override
+//   Widget build(BuildContext context){
+//     return const MaterialApp(
+//       home: Row(
+//         children: [
+//           Flexible(child: MyScaffoldWidget()),
+//           // Flexible(child: MyInputSelectionWidget()),
+//           // Flexible(child: MyDialogWidget()),
+//           // Flexible(child: MyDateTimePickers()),
+//           // Flexible(child: MyImageWidget()),
+//           // Flexible(child: MyTextWidget()),
+//         ],
+//       ),
+//     );
+//   }
+// }
+
 void main(){
-  runApp(const TugasPraktikum());
-}
-
-class TugasPraktikum extends StatelessWidget{
-  const TugasPraktikum({super.key});
-
-  @override
-  Widget build(BuildContext context){
-    return const MaterialApp(
-      home: Row(
-        children: [
-          Flexible(child: MyScaffoldWidget()),
-          Flexible(child: MyInputSelectionWidget()),
-          Flexible(child: MyDialogWidget()),
-          Flexible(child: MyDateTimePickers()),
-        ],
-      ),
-    );
-  }
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -38,7 +45,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Naresh Pratista'),
     );
   }
 }
@@ -72,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const MyImageWidget(),
+            const MyTextWidget(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
