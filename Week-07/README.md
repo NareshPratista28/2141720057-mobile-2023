@@ -1,4 +1,4 @@
-# Laporan Praktikum Minggu ke-6 | Pemrograman Mobile 2023
+# Laporan Praktikum Minggu ke-7 | Pemrograman Mobile 2023
 
 بِسْمِ ٱللَّٰهِ
 
