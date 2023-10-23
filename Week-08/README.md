@@ -93,3 +93,8 @@ return InkWell(
     }
 )
 ```
+
+Hasil Output: <br>
+
+![gif](/Week-08/docs/screenshot/praktikum.gif)
+
