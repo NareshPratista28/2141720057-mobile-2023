@@ -1,49 +1,50 @@
-import 'package:flutter/material.dart';
 import 'package:belanja/models/item.dart';
+import 'package:belanja/widgets/bottom_app.dart';
+import 'package:belanja/widgets/card.dart';
+import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
-
   final List<Item> items = [
-    Item(name: 'Sugar', price: 5000),
-    Item(name: 'Salt', price: 2000),
+    Item(
+        name: 'Stick Balado',
+        price: 15900,
+        imageUrl: 'assets/stick_balado.jpg',
+        stok: 10,
+        rating: 4.3),
+    Item(
+        name: 'Kurma Premium',
+        price: 35000,
+        imageUrl: 'assets/kurma_premium.jpg',
+        stok: 50,
+        rating: 4.5),
+    Item(
+        name: 'Air Mineral',
+        price: 5000,
+        imageUrl: 'assets/air_mineral.jpg',
+        stok: 100,
+        rating: 4.1),
+    Item(
+        name: 'Heritage Kopi',
+        price: 10000,
+        imageUrl: 'assets/heritage_kopi_papua.jpg',
+        stok: 50,
+        rating: 4.7),
+    Item(
+        name: 'Abon Sapi',
+        price: 8500,
+        imageUrl: 'assets/abon_sapi.jpg',
+        stok: 50,
+        rating: 4.6),
   ];
-
-  final routeName = '/item';
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(8),
-      child: ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          final item = items[index];
-          return Material(
-            child: InkWell(
-              onTap: () {
-                Navigator.pushNamed(context, routeName, arguments: item);
-              },
-              child: Card(
-                child: Container(
-                  margin: const EdgeInsets.all(8),
-                  child: Row(
-                    children: [
-                      Expanded(child: Text(item.name.toString())),
-                      Expanded(
-                        child: Text(
-                          item.price.toString(),
-                          textAlign: TextAlign.end,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          );
-        },
-      ),
-    );
+    return Scaffold(
+        appBar: AppBar(
+          title: Image.asset('assets/logo.png', width: 75,),
+          backgroundColor: Colors.white,
+        ),
+        body: CardWidget(items: items),
+        bottomNavigationBar: const BottomWidget());
   }
 }

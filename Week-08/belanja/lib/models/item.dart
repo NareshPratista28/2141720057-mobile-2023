@@ -1,6 +1,12 @@
 class Item {
-  String? name;
-  int? price;
+  String name, imageUrl;
+  int price, stok;
+  double rating;
 
-  Item({this.name, this.price});
+  Item(
+      {required this.name,
+      required this.price,
+      required this.imageUrl,
+      required this.stok,
+      required this.rating});
 }
