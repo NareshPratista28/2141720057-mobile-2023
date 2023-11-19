@@ -77,3 +77,11 @@ class MyApp extends StatelessWidget {
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
 
 ![GIF](/Week-12/docs/screenshot/soal5_p3.gif)
+
+### **Soal 6**
+- Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+    > - Perbedaan kode langkah 2 dan langkah 5-6 adalah pada cara menangani kesalahan. Pada langkah 2, kesalahan yang terjadi pada method calculate() tidak ditangani. Akibatnya, jika terjadi kesalahan, maka aplikasi akan crash
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
+
+![GIF](/Week-12/docs/screenshot/soal6_p3.gif)
