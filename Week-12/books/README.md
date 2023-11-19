@@ -59,11 +59,21 @@ class MyApp extends StatelessWidget {
 
 ## **Praktikum 2: Menggunakan await/async untuk menghindari callbacks**
 
-### **Soal 3**
+### **Soal 4**
 - Jelaskan maksud kode langkah 1 dan 2 tersebut!
     > - Fungsi returnOneAsync, returnTwoAsync, dan returnThreeAsync semuanya menggunakan kata kunci await untuk menunggu penyelesaian sebuah future sebelum mengembalikan nilai. Fungsi Future.delayed digunakan untuk membuat sebuah future yang akan diselesaikan setelah waktu tunda tertentu.
     > - Fungsi count memanggil fungsi returnOneAsync, returnTwoAsync, dan returnThreeAsync dan menambahkan hasilnya. 
-    
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 4".
 
 ![GIF](/Week-12/docs/screenshot/soal4_p2.gif)
+
+## **Praktikum 3: Menggunakan Completer di Future**
+
+### **Soal 5**
+- Jelaskan maksud kode langkah 1 dan 2 tersebut!
+    > - Pada langkah pertama, mengimport package async kedalam file.
+    > - Pada langkah kedua, menambahkan variabel dan metode. Completer adalah sebuah objek yang dapat digunakan untuk menangani kasus pengembalian nilai dari operasi asynchronous.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+
+![GIF](/Week-12/docs/screenshot/soal5_p3.gif)
