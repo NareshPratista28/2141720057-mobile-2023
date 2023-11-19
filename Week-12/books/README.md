@@ -45,3 +45,13 @@ class MyApp extends StatelessWidget {
 
 ![Screenshot](/Week-12/docs/screenshot/soal2_p1_2.PNG)
 
+![Screenshot](/Week-12/docs/screenshot/soal2_p1_3.PNG)
+
+
+### **Soal 3**
+- Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
+    > - substring digunakan untuk memotong string menjadi substring yang lebih pendek. Dalam kode ini, substring digunakan untuk memotong respons API menjadi 450 karakter pertama. Ini dilakukan karena respons API mungkin sangat panjang dan dapat menyebabkan kinerja yang buruk jika ditampilkan seluruhnya.
+    > - catchError digunakan untuk menangani kesalahan yang mungkin terjadi saat menjalankan kode di dalam blok then. Dalam kode ini, catchError digunakan untuk menampilkan pesan kesalahan "An error occurred!" jika terjadi kesalahan saat menjalankan getData().
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 3".
+
+![GIF](/Week-12/docs/screenshot/soal3_p1.gif)

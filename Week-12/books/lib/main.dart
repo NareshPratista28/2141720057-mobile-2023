@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart';
@@ -18,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Future Demo Naresh',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const FuturePage(),
@@ -47,7 +45,7 @@ class _FuturePageState extends State<FuturePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Future Demo'),
+        title: const Text('Future Demo Naresh'),
       ),
       body: Center(
         child: Column(
