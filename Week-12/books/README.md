@@ -103,3 +103,7 @@ class MyApp extends StatelessWidget {
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
 
 ![GIF](/Week-12/docs/screenshot/soal9_p5.gif)
+
+### **Soal 10**
+- Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+    > Hasilnya akan sama, memunculkan pesan "Exception; Something terrible happened!". Perbedaannya adalah Kode sebelumnya menangani kesalahan menggunakan catchError dalam blok then pada metode returnError(). sedangkan pada langkah 4 menggunakan konsep try, catch, dan finally langsung di dalam metode handleError()
