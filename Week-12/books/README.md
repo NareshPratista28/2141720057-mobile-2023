@@ -92,3 +92,7 @@ class MyApp extends StatelessWidget {
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7".
 
 ![GIF](/Week-12/docs/screenshot/soal7_p4.gif)
+
+### **Soal 8**
+- Jelaskan maksud perbedaan kode langkah 1 dan 4!
+    > Future.wait adalah fungsi bawaan yang memungkinkan kita menunggu sejumlah future selesai dan mendapatkan hasilnya sebagai daftar. Di sisi lain, FutureGroup adalah pustaka pihak ketiga. Future.wait dapat menyederhanakan implementasi, membuatnya lebih ringkas dan mudah dibaca
