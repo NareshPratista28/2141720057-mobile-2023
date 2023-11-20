@@ -137,3 +137,14 @@ class MyApp extends StatelessWidget {
 ![GIF](/Week-12/docs/screenshot/soal13_p7_chrome.gif)
 
 - Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+
+### **Soal 14**
+- Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+    > Tidak ada, dikarenakan langkah 5 hanya menambahkan error handling yang mana akan tampil apabila terdapat error
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
+
+![GIF](/Week-12/docs/screenshot/soal13_p7_chrome.gif)
+
+## **Praktikum 8: Navigation route dengan Future Function**
+
