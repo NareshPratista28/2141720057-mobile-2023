@@ -114,3 +114,15 @@ class MyApp extends StatelessWidget {
 - Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
 
 ![Screenshot](/Week-12/docs/screenshot/soal12_p6.PNG)
+
+### **Soal 12**
+- Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
+
+- Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+![GIF](/Week-12/docs/screenshot/soal12_p6_chrome.gif)
+
+    > Ya, karena browser yang saya gunakan disini sudah tersedia langsung API Geolocation. Browser akan meminta izin untuk mengakses lokasi
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
+
+![GIF](/Week-12/docs/screenshot/soal12_p6.gif)
