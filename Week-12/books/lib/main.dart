@@ -1,3 +1,4 @@
+import 'package:books/geolocation.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart';
@@ -20,154 +21,154 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const FuturePage(),
+      home: const LocationScreen(),
     );
   }
 }
 
-class FuturePage extends StatefulWidget {
-  const FuturePage({super.key});
+// class FuturePage extends StatefulWidget {
+//   const FuturePage({super.key});
 
-  @override
-  State<FuturePage> createState() => _FuturePageState();
-}
+//   @override
+//   State<FuturePage> createState() => _FuturePageState();
+// }
 
-class _FuturePageState extends State<FuturePage> {
-  String result = '';
-  late Completer completer;
+// class _FuturePageState extends State<FuturePage> {
+//   String result = '';
+//   late Completer completer;
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Future Demo Naresh'),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            const Spacer(),
-            ElevatedButton(
-              onPressed: () {
-                // setState(() {});
-                // getData().then((value) {
-                //   result = value.body.toString().substring(0, 450);
-                //   setState(() {});
-                // }).catchError((_) {
-                //   result = 'An error occurred!';
-                //   setState(() {});
-                // });
-                // count();
-                // getNumber().then((value) {
-                //   setState(() {
-                //     result = value.toString();
-                //   });
-                // }).catchError((e) {
-                //   result = 'An error occurred!';
-                // });
-                // returnFG();
-                // returnError().then((value) {
-                //   setState(() {
-                //     result = 'Success!';
-                //   });
-                // }).catchError((onError) {
-                //   setState(() {
-                //     result = onError.toString();
-                //   });
-                // }).whenComplete(() => print('Complete'));
-                handleError();
-              },
-              child: const Text('Go!'),
-            ),
-            const Spacer(),
-            Text(result),
-            const Spacer(),
-            const CircularProgressIndicator(),
-            const Spacer(),
-          ],
-        ),
-      ),
-    );
-  }
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Future Demo Naresh'),
+//       ),
+//       body: Center(
+//         child: Column(
+//           children: [
+//             const Spacer(),
+//             ElevatedButton(
+//               onPressed: () {
+//                 // setState(() {});
+//                 // getData().then((value) {
+//                 //   result = value.body.toString().substring(0, 450);
+//                 //   setState(() {});
+//                 // }).catchError((_) {
+//                 //   result = 'An error occurred!';
+//                 //   setState(() {});
+//                 // });
+//                 // count();
+//                 // getNumber().then((value) {
+//                 //   setState(() {
+//                 //     result = value.toString();
+//                 //   });
+//                 // }).catchError((e) {
+//                 //   result = 'An error occurred!';
+//                 // });
+//                 // returnFG();
+//                 // returnError().then((value) {
+//                 //   setState(() {
+//                 //     result = 'Success!';
+//                 //   });
+//                 // }).catchError((onError) {
+//                 //   setState(() {
+//                 //     result = onError.toString();
+//                 //   });
+//                 // }).whenComplete(() => print('Complete'));
+//                 handleError();
+//               },
+//               child: const Text('Go!'),
+//             ),
+//             const Spacer(),
+//             Text(result),
+//             const Spacer(),
+//             const CircularProgressIndicator(),
+//             const Spacer(),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
 
-  Future<Response> getData() async {
-    const authority = 'www.googleapis.com';
-    const path = '/books/v1/volumes/GuUREAAAQBAJ';
-    Uri url = Uri.https(authority, path);
-    return http.get(url);
-  }
+//   Future<Response> getData() async {
+//     const authority = 'www.googleapis.com';
+//     const path = '/books/v1/volumes/GuUREAAAQBAJ';
+//     Uri url = Uri.https(authority, path);
+//     return http.get(url);
+//   }
 
-  Future<int> returnOneAsync() async {
-    await Future.delayed(const Duration(seconds: 3));
-    return 1;
-  }
+//   Future<int> returnOneAsync() async {
+//     await Future.delayed(const Duration(seconds: 3));
+//     return 1;
+//   }
 
-  Future<int> returnTwoAsync() async {
-    await Future.delayed(const Duration(seconds: 3));
-    return 2;
-  }
+//   Future<int> returnTwoAsync() async {
+//     await Future.delayed(const Duration(seconds: 3));
+//     return 2;
+//   }
 
-  Future<int> returnThreeAsync() async {
-    await Future.delayed(const Duration(seconds: 3));
-    return 3;
-  }
+//   Future<int> returnThreeAsync() async {
+//     await Future.delayed(const Duration(seconds: 3));
+//     return 3;
+//   }
 
-  Future count() async {
-    int total = 0;
-    total = await returnOneAsync();
-    total += await returnTwoAsync();
-    total += await returnThreeAsync();
-    setState(() {
-      result = total.toString();
-    });
-  }
+//   Future count() async {
+//     int total = 0;
+//     total = await returnOneAsync();
+//     total += await returnTwoAsync();
+//     total += await returnThreeAsync();
+//     setState(() {
+//       result = total.toString();
+//     });
+//   }
 
-  Future getNumber() {
-    completer = Completer<int>();
-    calculate();
-    return completer.future;
-  }
+//   Future getNumber() {
+//     completer = Completer<int>();
+//     calculate();
+//     return completer.future;
+//   }
 
-  Future calculate() async {
-    try {
-      await new Future.delayed(const Duration(seconds: 5));
-      completer.complete(42);
-    } catch (_) {
-      completer.completeError({});
-    }
-  }
+//   Future calculate() async {
+//     try {
+//       await new Future.delayed(const Duration(seconds: 5));
+//       completer.complete(42);
+//     } catch (_) {
+//       completer.completeError({});
+//     }
+//   }
 
-  void returnFG() {
-    final futures = Future.wait<int>([
-      returnOneAsync(),
-      returnTwoAsync(),
-      returnThreeAsync(),
-    ]);
+//   void returnFG() {
+//     final futures = Future.wait<int>([
+//       returnOneAsync(),
+//       returnTwoAsync(),
+//       returnThreeAsync(),
+//     ]);
 
-    futures.then((List<int> value) {
-      int total = 0;
-      for (var element in value) {
-        total += element;
-      }
-      setState(() {
-        result = total.toString();
-      });
-    });
-  }
+//     futures.then((List<int> value) {
+//       int total = 0;
+//       for (var element in value) {
+//         total += element;
+//       }
+//       setState(() {
+//         result = total.toString();
+//       });
+//     });
+//   }
 
-  Future returnError() async {
-    await Future.delayed(const Duration(seconds: 2));
-    throw Exception('Something terrible happened!');
-  }
+//   Future returnError() async {
+//     await Future.delayed(const Duration(seconds: 2));
+//     throw Exception('Something terrible happened!');
+//   }
 
-  Future handleError() async {
-    try {
-      await returnError();
-    } catch (error) {
-      setState(() {
-        result = error.toString();
-      });
-    } finally {
-      print('Complete');
-    }
-  }
-}
+//   Future handleError() async {
+//     try {
+//       await returnError();
+//     } catch (error) {
+//       setState(() {
+//         result = error.toString();
+//       });
+//     } finally {
+//       print('Complete');
+//     }
+//   }
+// }

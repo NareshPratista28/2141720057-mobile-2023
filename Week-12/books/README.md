@@ -107,3 +107,10 @@ class MyApp extends StatelessWidget {
 ### **Soal 10**
 - Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
     > Hasilnya akan sama, memunculkan pesan "Exception; Something terrible happened!". Perbedaannya adalah Kode sebelumnya menangani kesalahan menggunakan catchError dalam blok then pada metode returnError(). sedangkan pada langkah 4 menggunakan konsep try, catch, dan finally langsung di dalam metode handleError()
+
+## **Praktikum 6: Menggunakan Future dengan StatefulWidget**
+
+### **Soal 11**
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
+![Screenshot](/Week-12/docs/screenshot/soal12_p6.PNG)
