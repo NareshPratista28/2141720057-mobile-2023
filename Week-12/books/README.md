@@ -126,3 +126,14 @@ class MyApp extends StatelessWidget {
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
 
 ![GIF](/Week-12/docs/screenshot/soal12_p6.gif)
+
+## **Praktikum 7: Manajemen Future dengan FutureBuilder**
+
+### **Soal 13**
+- Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+    > untuk perubahan UI tidak ada, mungkin hanya delay yang sdikit berbeda yaitu 3 detik.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13".
+
+![GIF](/Week-12/docs/screenshot/soal13_p7_chrome.gif)
+
+- Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
