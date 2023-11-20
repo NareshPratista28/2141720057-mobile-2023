@@ -148,3 +148,17 @@ class MyApp extends StatelessWidget {
 
 ## **Praktikum 8: Navigation route dengan Future Function**
 
+### **Soal 15**
+
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+- Silakan ganti dengan warna tema favorit Anda.
+
+![Screenshot](/Week-12/docs/screenshot/soal15_p8.PNG)
+
+### **Soal 16**
+
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+- Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
+
+![GIF](/Week-12/docs/screenshot/soal16_p8.gif)
