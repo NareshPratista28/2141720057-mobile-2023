@@ -84,3 +84,13 @@ class ColorStream {
 ![GIF](/Week-13/docs/screenshot/Soal6.gif)
 
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
+
+### **SOAL 7**
+
+- Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+    > - Langkah 13 bertujuan untuk menambahkan error ke dalam sink dari sebuah controller. 
+    > - Langkah 14 bertujuan untuk apabila terjadi kesalahan dalam stream, maka onError akan dijalankan
+    > - Langkah 15 bertujuan untuk menambahkan error ke dalam suatu stream yang disebut numberStream
+    
+- Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
