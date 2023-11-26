@@ -67,3 +67,10 @@ class ColorStream {
 
 - Lakukan commit hasil jawaban Soal 4 dengan pesan "W13: Jawaban Soal 4"
 
+### **SOAL 5**
+
+- Jelaskan perbedaan menggunakan listen dan await for (langkah 9)!
+    > - dengan await for, setiap kali ada elemen baru di stream, baris kode di dalam loop akan dijalankan, dan eksekusi berhenti untuk menunggu elemen berikutnya.
+    > - dengan listen, perbedaan utamanya adalah bahwa eksekusi kode di dalam blok listen tidak akan menghentikan eksekusi kode selanjutnya di luar blok tersebut. Kode selanjutnya akan tetap dijalankan, dan blok listen akan dijalankan secara asynchronous setiap kali ada perubahan pada stream.
+
+- Lakukan commit hasil jawaban Soal 5 dengan pesan "W13: Jawaban Soal 5"
