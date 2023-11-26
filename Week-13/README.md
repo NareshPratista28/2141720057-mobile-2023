@@ -146,3 +146,13 @@ class ColorStream {
 ![GIF](/Week-13/docs/screenshot/Soal12.gif)
 
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
+
+### **SOAL 13**
+
+- Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
+    > Jadi pada praktikum ini menjelaskan bagaimana itu penggunaan dari BLoc dalam aplikasi Flutter. Untuk letak konsep itu sendiri terdapat pada langkah 2 hingga 6 yang mana konsel BLoc ini diaplikasikan melalui pembuatan RandumNumberBloc.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![GIF](/Week-13/docs/screenshot/Soal13.gif)
+
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".
