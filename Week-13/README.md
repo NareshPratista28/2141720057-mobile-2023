@@ -30,3 +30,28 @@ Widget build(BuildContext context) {
     );
   }
 ```
+
+### **SOAL 2**
+- Tambahkan 5 warna lainnya sesuai keinginan Anda pada variabel colors tersebut.
+```dart
+import 'package:flutter/material.dart';
+
+class ColorStream {
+  final List<Color> colors = [
+    Colors.red,
+    Colors.green,
+    Colors.blue,
+    Colors.yellow,
+    Colors.pink,
+    Colors.purple,
+    Colors.orange,
+    Colors.brown,
+    Colors.teal,
+    Colors.indigo,
+  ];
+}
+
+```
+
+- Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
+
