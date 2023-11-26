@@ -119,3 +119,19 @@ class ColorStream {
 ![IMAGE](/Week-13/docs/screenshot/soal9.PNG)
 
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
+
+### **SOAL 10**
+
+![IMAGE](/Week-13/docs/screenshot/soal10.PNG)
+
+- Jelaskan mengapa error itu bisa terjadi ?
+    > Karena stream.listen diinput 2 kali
+
+### **SOAL 11**
+- Jelaskan mengapa hal itu bisa terjadi ?
+    > Karena ada .asBroadcastStream() yang digunakan untuk mengubah stream menjadi stream yang dapat di control oleh subscriber
+    
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![GIF](/Week-13/docs/screenshot/Soal11.gif)
+
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
