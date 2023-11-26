@@ -61,5 +61,9 @@ class ColorStream {
     > Kode tersebut merupakan sebuah fungsi yang mengembalikan Stream<Color>. Fungsi ini menggunakan async* untuk membuat generator stream yang akan menghasilkan warna secara periodik setiap detik.
 - Lakukan commit hasil jawaban Soal 3 dengan pesan "W13: Jawaban Soal 3"
 
+### **SOAL 4**
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![GIF](/Week-13/docs/screenshot/Soal4.gif)
 
+- Lakukan commit hasil jawaban Soal 4 dengan pesan "W13: Jawaban Soal 4"
 
