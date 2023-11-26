@@ -52,6 +52,14 @@ class ColorStream {
 }
 
 ```
-
 - Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
+
+### **SOAL 3**
+- Jelaskan fungsi keyword yield* pada kode tersebut!
+    > Fungsi yield* pada kode tersebut digunakan untuk menghasilkan aliran warna secara berkala. 
+- Apa maksud isi perintah kode tersebut?
+    > Kode tersebut merupakan sebuah fungsi yang mengembalikan Stream<Color>. Fungsi ini menggunakan async* untuk membuat generator stream yang akan menghasilkan warna secara periodik setiap detik.
+- Lakukan commit hasil jawaban Soal 3 dengan pesan "W13: Jawaban Soal 3"
+
+
 
