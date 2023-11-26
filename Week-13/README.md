@@ -130,8 +130,19 @@ class ColorStream {
 ### **SOAL 11**
 - Jelaskan mengapa hal itu bisa terjadi ?
     > Karena ada .asBroadcastStream() yang digunakan untuk mengubah stream menjadi stream yang dapat di control oleh subscriber
-    
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 ![GIF](/Week-13/docs/screenshot/Soal11.gif)
 
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
+
+### **SOAL 12**
+
+- Jelaskan maksud kode pada langkah 3 dan 7 !
+    > - Pada langkah 3, disitu kita mendefinisikan kelas NumberStream yang memiliki metode getNumbers(). Metode ini mengembalikan stream yang menghasilkan angka secara periodik setiap detik menggunakan Stream.periodic. Setiap kali periodik terjadi, kita menggunakan fungsi callback (int t) untuk menghasilkan angka acak antara 0 dan 99 menggunakan Random
+    > - Pada langkah 7, kita menggunakan StreamBuilder untuk membangun interface pengguna yang selalu diperbarui berdasarkan data dari stream bilangan bulat acak tersebut. Saat aplikasi dimulai, stream diinisialisasi, dan setiap perubahan pada stream akan mengakibatkan pembaruan tampilan, menampilkan nilai terbaru dari stream dalam bentuk besar pada layar aplikasi.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![GIF](/Week-13/docs/screenshot/Soal12.gif)
+
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
