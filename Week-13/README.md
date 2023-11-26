@@ -105,3 +105,17 @@ class ColorStream {
 ![GIF](/Week-13/docs/screenshot/Soal8.gif)
 
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
+
+### **SOAL 9**
+
+- Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+    > - pada langkah 2, disitu melakukan inisialisasi widget dengan membuat subscription terhadap stream.
+    > - Pada langkah 6, disitu membatalkan stream, atau menghentikan pemantau perubahan
+    > - Pada langkah 8, disitu method addRandomNumber menambahkan angka acak ke dalam stream jika controller stream belum ditutup. Jika belum maka akan diatur menjadi -1 menggunakan lastNumber.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![GIF](/Week-13/docs/screenshot/Soal9.gif)
+
+![IMAGE](/Week-13/docs/screenshot/soal9.PNG)
+
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
