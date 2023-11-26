@@ -74,3 +74,13 @@ class ColorStream {
     > - dengan listen, perbedaan utamanya adalah bahwa eksekusi kode di dalam blok listen tidak akan menghentikan eksekusi kode selanjutnya di luar blok tersebut. Kode selanjutnya akan tetap dijalankan, dan blok listen akan dijalankan secara asynchronous setiap kali ada perubahan pada stream.
 
 - Lakukan commit hasil jawaban Soal 5 dengan pesan "W13: Jawaban Soal 5"
+
+### **SOAL 6**
+
+- Jelaskan maksud kode langkah 8 dan 10 tersebut!
+    > langkah 8 menyiapkan dan mendengarkan perubahan pada stream, sementara langkah 10 menambahkan angka acak ke dalam stream menggunakan addNumberToSink. 
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![GIF](/Week-13/docs/screenshot/Soal6.gif)
+
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
