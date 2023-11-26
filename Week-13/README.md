@@ -94,3 +94,14 @@ class ColorStream {
     
 - Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
+
+### **SOAL 8**
+
+- Jelaskan maksud kode langkah 1-3 tersebut!
+    > - Pada langkah 1, disitu hanya mendeklarasikan variabel transformer 
+    > - Pada langkah 2, disitu membuat objek transformer menggunakan StreamTransformer <'int'>.fromHandlers
+    > - Pada langkah 3, disitu menggunakan objek transformer untuk mengubah streamnya.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![GIF](/Week-13/docs/screenshot/Soal8.gif)
+
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
